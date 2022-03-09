@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FamilyTracker</string>
+    <string name="create_account">Have no account? <u>Signup</u></string>
+    <string name="Have_account">Have an account? <u>Login</u></string>
+    <string name="password_length">Password must be atleaste 8 charcters </string>
+    <string name="authentication_failed">Authentication failed rre-check Email and password</string>
+
+
+    <string-array name="relation">
+        <item>Relation</item>
+        <item>Mom</item>
+        <item>Dad</item>
+    </string-array>
+    <string-array name="child_relation">
+        <item>Relation</item>
+        <item>Son</item>
+        <item>Daughter</item>
+    </string-array>
+    <string-array name="Name">
+
+        <item>Zahoor</item>
+        <item>Habib</item>
+        <item>Zahoor</item>
+        <item>Habib</item>
+        <item>Zahoor</item>
+        <item>Habib</item>
+    </string-array>
+</resources>

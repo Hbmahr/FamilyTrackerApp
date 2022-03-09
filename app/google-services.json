@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "434406432268",
+    "project_id": "familytracker-5e612",
+    "storage_bucket": "familytracker-5e612.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434406432268:android:6e8cfe9f68d94bdb5c5829",
+        "android_client_info": {
+          "package_name": "com.mth.familytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434406432268-llnrrksadd3v1l29i8lvjfr0rqll62hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeQBLvKn2fanuLkMSLcpM2fkxOrqB8XG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434406432268-llnrrksadd3v1l29i8lvjfr0rqll62hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434406432268:android:2fc337ba2fe1e13c5c5829",
+        "android_client_info": {
+          "package_name": "com.mth.familytrackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434406432268-llnrrksadd3v1l29i8lvjfr0rqll62hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeQBLvKn2fanuLkMSLcpM2fkxOrqB8XG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434406432268-llnrrksadd3v1l29i8lvjfr0rqll62hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

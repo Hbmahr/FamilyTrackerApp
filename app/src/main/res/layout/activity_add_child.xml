@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+
+    tools:context=".AddChildActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Tracker"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_below="@id/AppName"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="40dp"
+
+            android:layout_marginEnd="40dp"
+            android:padding="0dp"
+            android:textColorHint="#000000"
+            app:boxBackgroundMode="none"
+            app:boxStrokeColor="@color/white"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield_border"
+                android:drawablePadding="5dp"
+                android:hint="Firstname"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Spinner
+
+            android:id="@+id/spin_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstname"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/spinnerbg"
+            android:entries="@array/relation"
+            android:padding="15dp"
+            android:paddingStart="5dp"
+            android:spinnerMode="dropdown" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/planets_spinner"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:padding="0dp"
+            android:textColorHint="#000000"
+            app:boxBackgroundMode="none"
+            app:boxStrokeColor="@color/white"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield_border"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/planets_spinner"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:padding="0dp"
+            android:textColorHint="#000000"
+            app:boxBackgroundMode="none"
+            app:boxStrokeColor="@color/white"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield_border"
+                android:drawablePadding="5dp"
+                android:hint="Child Phone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:padding="0dp"
+            android:textColorHint="#000000"
+            app:boxBackgroundMode="none"
+            app:boxStrokeColor="@color/white"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/parentPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield_border"
+                android:drawablePadding="5dp"
+                android:hint="Parent Phone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/btn_border"
+            android:gravity="center"
+            android:text="Add"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/form"
+        android:layout_marginTop="20dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/next" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

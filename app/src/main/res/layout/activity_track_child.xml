@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    tools:context=".TrackChildActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Family Tracker"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/trach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/textfield_border"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:showDividers="end"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/Naming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Track Memeber"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:background="@color/gray" />
+
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="0dp" />
+
+    </LinearLayout>
+
+
+
+
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trach"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/RGroup">
+
+        <RadioButton
+            android:id="@+id/radchat"
+            android:layout_width="160dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:text="Track Chat"
+            android:background="@drawable/radiofield_border"/>
+        <RadioButton
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Track Call logs"
+            android:id="@+id/radlog"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiofield_border"/>
+        <RadioButton
+            android:padding="15dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Track Location"
+            android:id="@+id/radloc"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiofield_border"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/butn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RGroup"
+        android:layout_marginTop="40dp"
+
+        android:padding="5dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_border"
+            android:text="Track"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+</RelativeLayout>

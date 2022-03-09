@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bggradient">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Tracker"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btnparent"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/btn_border"
+        android:text="As Parent"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btnchild"
+        android:layout_below="@+id/btnparent"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/btn_border"
+        android:text="As Child"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
