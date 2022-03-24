@@ -197,11 +197,11 @@
 
         <ImageView
             android:id="@+id/btn_back"
-            android:layout_width="50dp"
+            android:layout_width="41dp"
             android:layout_height="50dp"
-            android:paddingRight="10dp"
             android:layout_gravity="center"
             android:background="@color/white"
+            android:paddingRight="10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/next" />
     </androidx.cardview.widget.CardView>

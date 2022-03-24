@@ -35,7 +35,6 @@ public class TrackChildActivity extends Activity {
         auth = FirebaseAuth.getInstance();
 
 
-
         name=findViewById(R.id.Naming);
         Spinner spinner = (Spinner) findViewById(R.id.planets_spinner);
         spinner.setSelection(1, false);

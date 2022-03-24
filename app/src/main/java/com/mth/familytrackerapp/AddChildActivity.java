@@ -34,6 +34,7 @@ public class AddChildActivity extends Activity {
     private Button btn_add;
     private TextInputEditText fname,email,phoneNo,parentPhone;
     private Spinner spinner;
+    boolean flag=false;
     private String Relation, Pphone;
     private  String cName,cemail,cphone,cPphone;
     public static final String ChildData="ChildData";
@@ -72,20 +73,11 @@ public class AddChildActivity extends Activity {
                 cemail=email.getText().toString();
                 cphone=phoneNo.getText().toString();
                 cPphone=parentPhone.getText().toString();
-                checkparent();
+
                 boolean a=validateUtils(cName,cemail,Relation,cphone,cPphone);
                 if(a==true)
                 {
                     checkparent();
-                    if(cPphone.equals(Pphone)){
-                        SaveChildData();
-                        startActivity(new Intent(AddChildActivity.this, LoginActivity.class));
-                    }
-                    else
-                    {
-                        parentPhone.setError("parent phone not Exsit");
-                    }
-
                 }
             }
         });
@@ -102,6 +94,7 @@ public class AddChildActivity extends Activity {
     }*/
 
     private void checkparent() {
+
         FirebaseDatabase instance= FirebaseDatabase.getInstance();
         DatabaseReference rootNode = instance.getReference("ParentData");
         rootNode.addValueEventListener(new ValueEventListener() {
@@ -111,9 +104,21 @@ public class AddChildActivity extends Activity {
                 for (DataSnapshot datasnapshot : snapshot.getChildren()){
 
                     Pphone=datasnapshot.child("phone").getValue().toString();
-                    if(!Pphone.equals(cPphone)){
-                        Pphone="";
+                    Toast.makeText(AddChildActivity.this, ""+Pphone, Toast.LENGTH_SHORT).show();
+
+                    if(Pphone.equals(cPphone)){
+                        SaveChildData();
+                        startActivity(new Intent(AddChildActivity.this, LoginActivity.class));
+                        flag=true;
+                        break;
                     }
+
+                }
+                if(flag==false)
+                {
+
+                    parentPhone.setError("parent phone not Exsit");
+
                 }
 
             }
